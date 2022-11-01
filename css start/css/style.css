@@ -1,0 +1,47 @@
+h2 {
+  color: aqua;
+}
+
+#paragraf {
+  color: blue;
+} 
+
+#paragraf:hover {
+  background-color: yellow;
+}
+
+.text {
+  color: aquamarine;
+}
+
+.text.twice {
+  color: #bb1f6d;
+}
+
+ul ~ p {
+  color: blueviolet;
+}
+
+ul + p {
+  color: rgb(87, 38, 7);
+}
+
+.list li {
+  color: cornflowerblue;
+}
+
+.list > .item {
+  color: rgba(104, 72, 138, 0.8);
+}
+
+ul.list li.item:first-child {
+  color: teal;
+}
+
+.list li.item:last-child {
+  color: tomato;
+}
+
+p:last-of-type {
+  color: chartreuse;
+}
