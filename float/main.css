@@ -1,0 +1,80 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #C4C4C4;
+}
+
+p {
+  margin: 0;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.box {
+  background-color: #E6E6E6;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.block {
+  width: 200px;
+  padding-top: 63px;
+  padding-bottom: 62px;
+  font-size: 64px;
+  background-color: #FC8F8F;
+}
+
+.box1 p:first-child {
+  float: left;
+}
+
+.box1 p:last-of-type {
+  float: right;
+}
+
+.box2 .block {
+  float: left;
+}
+
+.small-blocks {
+  float: right;
+}
+.small {
+  width: 100px;
+  padding: 31px 0;
+  margin-right: 15px;
+  font-size: 36px;
+  background-color: #FC8F8F;
+  float: left;
+}
+
+.small:last-child {
+  margin-right: 0;
+}
+
+.box3 p:nth-of-type(2n + 1) {
+  margin-right: 15px;
+}
+
+.box3 .block:nth-child(-n + 2) {
+  float: left;
+}
+
+.big-blocks {
+  float: right;
+}
