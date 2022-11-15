@@ -6,6 +6,8 @@
 
 :root {
   --primary-color: #F13C6E;
+  --secondary-color: #fff;
+  --main-txt-color: #000;
 }
 
 body {
@@ -13,7 +15,7 @@ body {
   line-height: 1.14;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: #000;
+  color: var(--main-txt-color);
 }
 
 h1 {
@@ -28,14 +30,14 @@ h2 {
   line-height: 28px;
 }
 
-h4 {
+h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
 }
 
 a {
-  color: #000;
+  color: var(--main-txt-color);
   text-decoration: none;
 } 
 
@@ -69,21 +71,43 @@ a {
 }
 
 .btn {
-  padding: 10px 56px;
+  font-family: 'Roboto';
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   border: 2px solid var(--primary-color);
   border-radius: 40px;
   background: none;
   cursor: pointer;
 }
 
+.btn-padding-head-foot {
+  padding: 10px 54px 10px 55px;
+}
+
+.btn-padding-head-foot:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
 .btn-white {
-  border-color: #fff;
-  color: #fff;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .btn-primary {
-  color: #fff;
+  color: var(--secondary-color);
   background-color: var(--primary-color);
+}
+
+.btn.btn-primary {
+  padding: 7.5px 51.5px;
+  border-radius: 30px;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /* Header */
@@ -116,6 +140,10 @@ header a:hover {
   border-bottom: 1px solid #EFEFEF;
 }
 
+.middle-line_logo {
+  font-size: 0;
+}
+
 .middle-line_logo img {
   margin-right: 20px;
   vertical-align: middle;
@@ -132,10 +160,16 @@ header a:hover {
 
 .middle-line_buttons {
   padding: 20px 0;
+  font-size: 0;
+}
+
+.middle-line_buttons a {
+  font-size: 14px;
 }
 
 .middle-line_buttons .btn {
   margin-left: 40px;
+  font-size: 14px;
 }
 
 .bottom-line .horizontal-nav {
@@ -161,7 +195,7 @@ main {
 }
 
 .banner h1 {
-  color: #fff;
+  color: var(--secondary-color);
   margin-bottom: 50px;
 }
 
@@ -169,7 +203,17 @@ main {
   max-width: 260px;
   margin-bottom: 30px;
   line-height: 20px;
-  color: #fff;
+  color: var(--secondary-color);
+}
+
+.banner .btn {
+  padding: 10px 65px 10px 66px;
+  letter-spacing: 0.05em;
+}
+
+.banner .btn:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 /* Products */
@@ -183,16 +227,13 @@ main {
 
 .product {
   padding: 25px 30px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   text-align: center;
-}
-
-.product-img {
-  margin-bottom: 20px;
 }
 
 .product-img img {
   max-width: 125px;
+  margin-bottom: 20px;
 }
 
 .product-title {
@@ -209,6 +250,10 @@ main {
   letter-spacing: 0.05em;
 }
 
+.product .btn {
+  display: inline-block;
+}
+
 /* 4 cards in row */
 .cards-4 .card {
   width: calc((100% - 90px) / 4);
@@ -218,7 +263,7 @@ main {
 .cards-2 .card {
   width: calc((100% - 30px) / 2);
 }
-
+/* -------------cta------------ */
 .card {
   float: left;
 }
@@ -229,10 +274,10 @@ main {
 
 .cta .card {
   padding: 35px 45px 35px 40px;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
-.cta h4,
+.cta h3,
 .cta p {
   margin-bottom: 25px;
 }
@@ -270,6 +315,7 @@ main {
   display: inline-block;
   text-align: center;
   line-height: 17px;
+  border-radius: 30px;
 }
 
 .cta img:last-of-type {
@@ -277,16 +323,22 @@ main {
 }
 
 .cta a:hover {
-  background-color: #fff;
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+
+/**
+  |============================
+  | BRANDS
+  |============================
+*/
 
 .brands {
   padding:99px 0 80px;
 }
 
 .brands-list {
-  /* font-size: 0; */
+  font-size: 0;
   border: 1px solid transparent;
 }
 
@@ -305,13 +357,93 @@ main {
 .brands-link {
   display: block;
   padding: 35px 69px 35px 60px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
+}
+
+.brands-link:hover {
+  background-color: #828282;
 }
 
 .brands-item img {
   display: block;
 }
 
+/**
+  |============================
+  | GOODS
+  |============================
+*/
+
 .goods {
   padding-bottom: 80px;
+}
+
+/**
+  |============================
+  | footer
+  |============================
+*/
+
+footer a:hover {
+  color: var(--primary-color);
+}
+
+.categories {
+  padding: 60px 0;
+}
+
+.foot-title {
+  max-width: 99px;
+  margin-bottom: 29px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.41;
+}
+
+.foot-list {
+  border-top: 1px solid #EFEFEF;
+}
+
+.foot-list li:first-child {
+  padding-top: 25px;
+}
+
+.foot-link {
+  font-size: 12px;
+  line-height: 2.33;
+  color: #828282;
+}
+
+.box-line {
+  padding: 37px 0 38px;
+  border-top: 1px solid #EFEFEF;
+}
+
+footer .middle-line_buttons {
+  padding: 0;
+  margin-top: 2.5px;
+}
+
+.contact {
+  font-size: 0;
+}
+
+.social a{
+  display: inline-block;
+}
+
+.social a + a {
+  margin-left: 20px;
+}
+
+.bottom-box {
+  padding: 25px 0;
+  background-color: #EFEFEF;
+}
+
+.bottom-box p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  color: #828282;
 }
