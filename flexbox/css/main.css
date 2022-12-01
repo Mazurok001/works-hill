@@ -45,9 +45,19 @@ ul {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -143,3 +153,44 @@ img {
   height: 45px;
 }
 
+/**
+  |============================
+  | Hero
+  |============================
+*/
+
+.hero {
+  padding-top: 129px;
+  padding-bottom: 172px;
+}
+
+.hero-title {
+  width: 539px;
+  margin-bottom: 51px;
+  font-family: var(--second-font);
+  font-size: 65px;
+  line-height: 1.08;
+}
+
+.hero-text {
+  width: 471px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-item + .hero-item {
+  margin-left: 10px;
+}
+
+.hero-desc {
+  margin-top: 25px;
+  font-size: 15px;
+  line-height: 1.67;
+}
+
+.hero-img {}
