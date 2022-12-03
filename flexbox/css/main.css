@@ -231,8 +231,6 @@ img {
   padding-bottom: 150px;
 }
 
-.benefits-list {}
-
 .benefits-item:not(:last-child){
   margin-bottom: 250px;
 }
@@ -268,5 +266,69 @@ img {
   color: inherit;
 }
 
+/**
+  |============================
+  | Products
+  |============================
+*/
 
-.benefits-img {}
+.products {
+  padding-top: 120px;
+  padding-bottom: 93px;
+  background-color: #FFF8E4;
+}
+
+.products-title {
+  margin-bottom: 58px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.products-list {
+  flex-wrap: wrap;
+  row-gap: 57px;
+  column-gap: 110px;
+}
+
+.products-item {
+  padding-top: 21px;
+  flex-direction: column;
+  flex-basis: 330px;
+}
+
+.products-subtitle {
+  margin: 23px 0;
+}
+
+.products-text a {
+  color: inherit;
+}
+
+.products-text {
+  text-align: center;
+}
+
+/**
+  |============================
+  | Up-productivity
+  |============================
+*/
+
+.productivity {
+  padding-top: 154px;
+  padding-bottom: 187px;
+}
+
+.productivity-title {}
+
+.productivity-list {}
+
+.list {}
+
+.productivity-item {}
+
+.title-font {}
+
+.productivity-text {}
+
+.productivity-link {}
